@@ -8,9 +8,9 @@ import { HomePage } from "./pages/home/Home";
 export const AppRouter: React.FC<{}> = () => {
     return (
         <Routes>
+            <Route path="/login" element={<LoginPage />} />
             <Route path="/" element={<RouterLayout />}>
                 <Route path="/home" element={<HomePage />} />
-                <Route path="/login" element={<LoginPage />} />
                 <Route path="/signup" element={<SignupPage />} />
             </Route>
         </Routes>
